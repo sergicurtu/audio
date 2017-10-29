@@ -46,6 +46,9 @@ window.addEventListener('load', function() {
 		alert("cridada funció");
 		
 		var filepart = Date.now();
+		
+		alert(filepart);
+		
 		var src = filepart + "." + "myrecording.mp3";
 
 		alert(src);
