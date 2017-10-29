@@ -41,11 +41,13 @@ window.addEventListener('load', function() {
 	recordAudio();
 	
 	function recordAudio() {
+		
+		alert("cridada funcio");
+		
 		var src = "myrecording.amr";
 		var mediaRec = new Media(src, onSuccess, onError);
 
 		// Record audio
-		alert("cridada funcio");
 		mediaRec.startRecord();
 
 		// Stop recording after 10 sec
@@ -58,26 +60,26 @@ window.addEventListener('load', function() {
 				mediaRec.stopRecord();
 			}
 		}, 1000);
-	}
+	};
 
 	// onSuccess Callback
 	//
 	function onSuccess() {
 		//console.log("recordAudio():Audio Success");
 		alert("recordAudio():Audio Success");
-	}
+	};
 
 	// onError Callback
 	//
 	function onError(error) {
 		alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
-	}
+	};
 
 	// Set audio position
 	//
 	function setAudioPosition(position) {
 		document.getElementById('audio_position').innerHTML = position;
-	}	
+	};	
 		
  
 }, false);
