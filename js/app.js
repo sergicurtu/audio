@@ -37,8 +37,11 @@ window.addEventListener('load', function() {
         .initView('home');
 		
 	
-	setAudioPosition("recording now");
-	recordAudio();
+	// Set audio position
+	//
+	function setAudioPosition(position) {
+		document.getElementById('audio_position').innerHTML = position;
+	};	
 	
 	function recordAudio() {
 		
@@ -77,11 +80,9 @@ window.addEventListener('load', function() {
 		alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 	};
 
-	// Set audio position
-	//
-	function setAudioPosition(position) {
-		document.getElementById('audio_position').innerHTML = position;
-	};	
+	
+	setAudioPosition("recording now");
+	recordAudio();
 		
  
 }, false);
