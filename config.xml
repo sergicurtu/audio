@@ -32,45 +32,45 @@
 	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network" required="false" />
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-	
-  <preference name="orientation" value="default"/>
-  <preference name="target-device" value="universal"/>
-  <preference name="fullscreen" value="true"/>
-  <preference name="webviewbounce" value="true"/>
-  <preference name="prerendered-icon" value="true"/>
-  <preference name="stay-in-webview" value="false"/>
-  
-  <preference name="StatusBarOverlaysWebView" value="true" />
-  <preference name="StatusBarBackgroundColor" value="#000000" />
-  <preference name="StatusBarStyle" value="lightcontent" />
-  
-  <preference name="detect-data-types" value="true"/>
-  <preference name="exit-on-suspend" value="false"/>
-  <preference name="show-splash-screen-spinner" value="true"/>
-  <preference name="AutoHideSplashScreen" value="false" />
-  <preference name="SplashScreenDelay" value="3000" />
-  
-  <preference name="disable-cursor" value="false"/>
-  <preference name="android-targetSdkVersion" value="16"/>
-  <preference name="android-minSdkVersion" value="15"/>
-  <preference name="android-installLocation" value="auto"/>
-  
 
-  <gap:plugin name="cordova-plugin-camera" source="npm" />
-  <!-- 
+	<preference name="orientation" value="default"/>
+	<preference name="target-device" value="universal"/>
+	<preference name="fullscreen" value="true"/>
+	<preference name="webviewbounce" value="true"/>
+	<preference name="prerendered-icon" value="true"/>
+	<preference name="stay-in-webview" value="false"/>
+
+	<preference name="StatusBarOverlaysWebView" value="true" />
+	<preference name="StatusBarBackgroundColor" value="#000000" />
+	<preference name="StatusBarStyle" value="lightcontent" />
+
+	<preference name="detect-data-types" value="true"/>
+	<preference name="exit-on-suspend" value="false"/>
+	<preference name="show-splash-screen-spinner" value="true"/>
+	<preference name="AutoHideSplashScreen" value="false" />
+	<preference name="SplashScreenDelay" value="3000" />
+
+	<preference name="disable-cursor" value="false"/>
+	<preference name="android-targetSdkVersion" value="16"/>
+	<preference name="android-minSdkVersion" value="15"/>
+	<preference name="android-installLocation" value="auto"/>
+
+
+	<gap:plugin name="cordova-plugin-camera" source="npm" />
+	<!-- 
 		28.1.2017 no és npm<gap:plugin name="com.performanceactive.plugins.camera" version="1.4" />
-  -->
-  
-  <gap:plugin name="cordova-plugin-file" source="npm" />
-  <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>  
-  <gap:plugin name="cordova-plugin-media" source="npm" />
-  <gap:plugin name="cordova-plugin-media-capture" source="npm" />
-  <gap:plugin name="cordova-plugin-device-motion" source="npm" />
-  <gap:plugin name="cordova-plugin-device-orientation" source="npm" />
-  <gap:plugin name="cordova-plugin-geolocation" source="npm" />
-  <gap:plugin name="cordova-plugin-globalization" source="npm" />
-  
-  <gap:plugin name="cordova-plugin-androidlicense" source="npm" />
+	-->
+
+	<gap:plugin name="cordova-plugin-file" source="npm" />
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm"/>  
+	<gap:plugin name="cordova-plugin-media" source="npm" />
+	<gap:plugin name="cordova-plugin-media-capture" source="npm" />
+	<gap:plugin name="cordova-plugin-device-motion" source="npm" />
+	<gap:plugin name="cordova-plugin-device-orientation" source="npm" />
+	<gap:plugin name="cordova-plugin-geolocation" source="npm" />
+	<gap:plugin name="cordova-plugin-globalization" source="npm" />
+
+	<gap:plugin name="cordova-plugin-androidlicense" source="npm" />
 
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
 	<gap:plugin name="cordova-plugin-vibration" source="npm"  />
@@ -81,8 +81,9 @@
 	<gap:plugin name="cordova-plugin-inappbrowser" source='npm' />
 	<gap:plugin name="cordova-plugin-x-toast" source='npm' />
 	<gap:plugin name="ionic-plugin-keyboard" source='npm' />
+	<gap:plugin name="cordova-plugin-statusbar" spec="~2.2.3" /> <!-- <gap:plugin name="org.apache.cordova.statusbar" source='npm' /> -->
 	
-	<gap:plugin name="org.apache.cordova.statusbar" source='npm' />
+	
 	<gap:plugin name="cordova-plugin-app-version" source='npm' />
 
 
