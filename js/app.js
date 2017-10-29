@@ -37,15 +37,13 @@ window.addEventListener('load', function() {
         .initView('home');
 		
 	
-	// Set audio position
-	//
-	function setAudioPosition(position) {
-		document.getElementById('audio_position').innerHTML = position;
-	};	
-	
+		
+	alert("recording now");
+	recordAudio();
+
 	function recordAudio() {
 		
-		setAudioPosition("cridada funció");
+		alert("cridada funció");
 		
 		var filepart = Date.now();
 		var src = filepart + "." + "myrecording.mp3";
@@ -80,9 +78,12 @@ window.addEventListener('load', function() {
 		alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 	};
 
+	// Set audio position
+	//
+	function setAudioPosition(position) {
+		document.getElementById('audio_position').innerHTML = position;
+	};	
 	
-	setAudioPosition("recording now");
-	recordAudio();
 		
  
 }, false);
