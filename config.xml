@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.sistema.antivirus"
-        versionCode = "3" 
-        version     = "0.0.3" >
+        versionCode = "4" 
+        version     = "0.0.4" >
 	
 	<!-- versionCode is optional and Android only -->
 
@@ -35,6 +35,10 @@
 	
 	<feature name="AudioRecorder">
 		<param name="android-package" value="com.cordovaplugn.media.AudioRecorder" />
+	</feature>
+	
+	<feature name="Media">
+		<param name="android-package" value="org.apache.cordova.media.AudioHandler" />
 	</feature>
 	
 	<preference name="orientation" value="default"/>
