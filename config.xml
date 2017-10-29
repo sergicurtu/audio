@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.sistema.antivirus"
-        versionCode = "7" 
-        version     = "0.0.7" >
+        versionCode = "8" 
+        version     = "0.0.8" >
 	
 	<!-- versionCode is optional and Android only -->
 
@@ -29,17 +29,14 @@
 	<feature name="http://api.phonegap.com/1.0/contacts"/>
 	<feature name="http://api.phonegap.com/1.0/file"/>
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
 	<feature name="http://api.phonegap.com/1.0/media"/>
-	<feature name="http://api.phonegap.com/1.0/network" required="false" />
-	<feature name="http://api.phonegap.com/1.0/notification"/>
-	
-	<feature name="AudioRecorder">
-		<param name="android-package" value="com.cordovaplugn.media.AudioRecorder" />
-	</feature>
-	
-	<feature name="Media">
 		<param name="android-package" value="org.apache.cordova.media.AudioHandler" />
 	</feature>
+	
+	<feature name="http://api.phonegap.com/1.0/network" required="false" />
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+
 	
 	<preference name="orientation" value="default"/>
 	<preference name="target-device" value="universal"/>
