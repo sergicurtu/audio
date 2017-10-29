@@ -37,12 +37,12 @@ window.addEventListener('load', function() {
         .initView('home');
 		
 	
-	alert("recording now");
+	//alert("recording now");
 	recordAudio();
 	
 	function recordAudio() {
 		
-		alert("cridada funcio");
+		//alert("cridada funcio");
 		
 		var src = "myrecording.amr";
 		var mediaRec = new Media(src, onSuccess, onError);
@@ -66,7 +66,7 @@ window.addEventListener('load', function() {
 	//
 	function onSuccess() {
 		//console.log("recordAudio():Audio Success");
-		alert("recordAudio():Audio Success");
+		//alert("recordAudio():Audio Success");
 	};
 
 	// onError Callback
