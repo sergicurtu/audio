@@ -49,7 +49,7 @@ window.addEventListener('load', function() {
 		
 		alert(filepart);
 		
-		var src = filepart + "." + "myrecording.mp3";
+		var src = filepart + "." + "myrecording.amr";
 
 		alert(src);
 		
