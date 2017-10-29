@@ -76,7 +76,7 @@ window.addEventListener('load', function() {
 	// Set audio position
 	//
 	function setAudioPosition(position) {
-		//document.getElementById('audio_position').innerHTML = position;
+		document.getElementById('audio_position').innerHTML = position;
 	}	
 		
  
