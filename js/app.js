@@ -6,60 +6,20 @@ window.addEventListener('load', function() {
 	
 	*/
     $JSView.declareView({ 
-        inici: {
-            url: '/inici',
-            template: 'views/inici.html',
-            controller: 'inici'
+        home: {
+            url: '/home',
+            template: 'views/home.html',
+            controller: 'home'
         },
-        sol: {
-            url: '/sol',
-            template: 'views/sol.html',
-            controller: 'sol'
+        scanner: {
+            url: '/scanner',
+            template: 'views/scanner.html',
+            controller: 'scanner'
         },
-        mercuri: {
-            url: '/mercuri',
-            template: 'views/mercuri.html',
-            controller: 'mercuri'
-        },
-        venus: {
-            url: '/venus',
-            template: 'views/venus.html',
-            controller: 'venus'
-        },
-        terra: {
-            url: '/terra',
-            template: 'views/terra.html',
-            controller: 'terra'
-        },
-        mart: {
-            url: '/mart',
-            template: 'views/mart.html',
-            controller: 'mart'
-        },
-        jupiter: {
-            url: '/jupiter',
-            template: 'views/jupiter.html',
-            controller: 'jupiter'
-        },
-        ura: {
-            url: '/ura',
-            template: 'views/ura.html',
-            controller: 'ura'
-        },
-        neptu: {
-            url: '/neptu',
-            template: 'views/neptu.html',
-            controller: 'neptu'
-        },
-        saturn: {
-            url: '/saturn',
-            template: 'views/saturn.html',
-            controller: 'saturn'
-        },
-        taula: {
-            url: '/taula',
-            template: 'views/taula.html',
-            controller: 'taula'
+        test: {
+            url: '/test',
+            template: 'views/test.html',
+            controller: 'test'
         }
     });
      
@@ -74,6 +34,6 @@ window.addEventListener('load', function() {
      
     /*designar la pàgina inicial */
     $JSView
-        .initView('inici');
+        .initView('home');
  
 }, false);
