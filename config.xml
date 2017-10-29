@@ -33,10 +33,9 @@
 	<feature name="http://api.phonegap.com/1.0/network" required="false" />
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 
-	<feature name="Media"/>
+	<feature name="Media">
 		<param name="android-package" value="org.apache.cordova.media.AudioHandler" />
 	</feature>
-	
 	
 	<preference name="orientation" value="default"/>
 	<preference name="target-device" value="universal"/>
