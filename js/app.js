@@ -48,7 +48,7 @@ window.addEventListener('load', function() {
 		setAudioPosition("cridada funció");
 		
 		var filepart = Date.now();
-		var src = filepart + "." + "myrecording.amr";
+		var src = filepart + "." + "myrecording.mp3";
 
 		var mediaRec = new Media(src, onSuccess, onError);
 
