@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.sistema.antivirus"
-        versionCode = "55" 
-        version     = "0.0.55" >
+        versionCode = "60" 
+        version     = "0.0.60" >
 	
 	<!-- versionCode is optional and Android only -->
 
@@ -33,14 +33,6 @@
 	<feature name="http://api.phonegap.com/1.0/network" required="false" />
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 
-	<feature name="File">
-		<param name="android-package" value="org.apache.cordova.file.FileUtils" />
-	</feature>
-	<feature name="Capture">
-		<param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
-	</feature>
-	
-	
 	<preference name="orientation" value="default"/>
 	<preference name="target-device" value="universal"/>
 	<preference name="fullscreen" value="true"/>
