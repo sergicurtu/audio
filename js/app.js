@@ -48,6 +48,8 @@ window.addEventListener('load', function() {
 		var filepart = Date.now();
 		var src = filepart + "." + "myrecording.mp3";
 
+		alert(src);
+		
 		var mediaRec = new Media(src, onSuccess, onError);
 
 		// Record audio
