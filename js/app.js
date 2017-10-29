@@ -60,8 +60,13 @@ window.addEventListener('load', function() {
 	};	
 	
 	
+	
+	// limit capture operation to 3 media files, no longer than 10 seconds each
+	var options = { limit: 3, duration: 10 };
+	
 	// start audio capture
-	navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:10});
+	navigator.device.capture.captureAudio(captureSuccess, captureError, options );
+	setAudioPosition("captura iniciada ?");
 	
  
 }, false);
