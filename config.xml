@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.sistema.antivirus"
-        versionCode = "65" 
-        version     = "0.0.65" >
+        versionCode = "70" 
+        version     = "0.0.70" >
 	
 	<!-- versionCode is optional and Android only -->
 
@@ -32,7 +32,7 @@
 	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network" required="false" />
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-
+	
 	<preference name="orientation" value="default"/>
 	<preference name="target-device" value="universal"/>
 	<preference name="fullscreen" value="true"/>
@@ -70,6 +70,10 @@
 	<gap:plugin name="cordova-plugin-geolocation" source="npm" />
 	<gap:plugin name="cordova-plugin-globalization" source="npm" />
 
+	<feature name="Media">
+		<param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+	</feature>
+	
 	<gap:plugin name="cordova-plugin-androidlicense" source="npm" />
 
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
