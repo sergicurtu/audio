@@ -52,7 +52,7 @@ window.addEventListener('load', function() {
         alert("recordAudio(), recording to " + recordSrc);
         alert(" -- media=" + mediaRec);
 
-        releaseAudio();
+        //releaseAudio();
 
         if (!mediaRec) {
             mediaRec = new Media(recordSrc,
