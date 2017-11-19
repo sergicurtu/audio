@@ -49,12 +49,14 @@ window.addEventListener('load', function() {
 		
 		//alert(filepart);
 		
-		var src = filepart + "." + "myrecording.amr";  // 'cdvfile://localhost/temporary/recording.mp3' //
+		var src = filepart + "." + "amr";  // 'cdvfile://localhost/temporary/recording.mp3' //
 
 		alert(src);
 		
-		var mediaRec = new Media(src, onSuccess, onError);
+		var mediaRec = new Media(src);
 
+		mediaRec.release();
+		
 		// Record audio
 		mediaRec.startRecord();
 
