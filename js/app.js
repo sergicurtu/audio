@@ -60,6 +60,8 @@ window.addEventListener('load', function() {
 		// Record audio
 		mediaRec.startRecord();
 
+		alert("recording");
+		
 		// Stop recording after 10 sec
 		var recTime = 0;
 		var recInterval = setInterval(function() {
