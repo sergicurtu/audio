@@ -40,8 +40,8 @@ window.addEventListener('load', function() {
 	var mediaRec = null;
     var recTime = 0;
 	var filepart = Date.now();
-	var recordSrc = "cdvfile://localhost/" + filepart + "." + "amr";  // 'cdvfile://localhost/temporary/recording.mp3' //
-	alert(recordSrc);
+	var recordSrc = filepart + "." + "amr";  // 'cdvfile://localhost/temporary/recording.mp3' //
+	//alert(recordSrc);
 	
 
 	recordAudio();
@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
     function recordAudio() {
 		
         alert("recordAudio(), recording to " + recordSrc);
-        alert(" -- media=" + mediaRec);
+        //alert(" -- media=" + mediaRec);
 
         //releaseAudio();
 
@@ -94,6 +94,11 @@ window.addEventListener('load', function() {
 	function setAudioPosition(position) {
 		document.getElementById('audio_position').innerHTML = position;
 	};	
+	
+	//Set audio status
+    function setAudioStatus(status) {
+        document.getElementById('statusValue').innerHTML = status;
+    }
 	
 	//Release audio
     function releaseAudio() {
