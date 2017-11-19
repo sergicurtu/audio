@@ -36,23 +36,7 @@ window.addEventListener('load', function() {
     $JSView
         .initView('home');
 		
-	// capture callback
-	var captureSuccess = function(mediaFiles) {
-		var i, path, len;
-		for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-			path = mediaFiles[i].fullPath;
-			// do something interesting with the file
-		}
-	};
 
-	// capture error callback
-	var captureError = function(error) {
-		navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
-	};
-
-	// start audio capture
-	navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:10});
-		
 	//alert("recording now");
 	recordAudio();
 
@@ -68,7 +52,7 @@ window.addEventListener('load', function() {
 
 		alert(src);
 		
-		var mediaRec = new Media(src);
+		var mediaRec = new Media(src,{limit:10});
 
 		mediaRec.release();
 		
