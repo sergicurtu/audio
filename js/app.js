@@ -49,7 +49,7 @@ window.addEventListener('load', function() {
 		
 		//alert(filepart);
 		
-		var src = filepart + "." + "myrecording.amr";
+		var src = filepart + "." + "myrecording.amr";  // 'cdvfile://localhost/temporary/recording.mp3' //
 
 		alert(src);
 		
