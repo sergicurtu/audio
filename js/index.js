@@ -1,7 +1,6 @@
-$(document).on('deviceready', function() {
-
+window.addEventListener('deviceready', function() {
 	
+		alert("deviceready");
 	
+}});
 	
-});
-

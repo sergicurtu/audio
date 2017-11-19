@@ -38,16 +38,16 @@ window.addEventListener('load', function() {
 		
 	
 		
-	alert("recording now");
+	//alert("recording now");
 	recordAudio();
 
 	function recordAudio() {
 		
-		alert("cridada funció");
+		//alert("cridada funció");
 		
 		var filepart = Date.now();
 		
-		alert(filepart);
+		//alert(filepart);
 		
 		var src = filepart + "." + "myrecording.amr";
 
