@@ -57,14 +57,14 @@ window.addEventListener('load', function() {
         if (!mediaRec) {
             mediaRec = new Media(recordSrc,
                 function () {
-                    console.log("recordAudio():Audio Success");
+                    alert("recordAudio():Audio Success");
                 },
                     function (err) {
-                    console.log("recordAudio():Audio Error: " + err.code);
+                    alert("recordAudio():Audio Error: " + err.code);
                     setAudioStatus("Error: " + err.code);
                 },
                     function (status) {
-                    console.log("recordAudio():Audio Status: " + status);
+                    alert("recordAudio():Audio Status: " + status);
                     setAudioStatus(Media.MEDIA_MSG[status]);
                 });
         }
