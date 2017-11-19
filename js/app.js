@@ -40,7 +40,7 @@ window.addEventListener('load', function() {
 	var mediaRec = null;
     var recTime = 0;
 	var filepart = Date.now();
-	var recordSrc = filepart + "." + "mp3";  // 'cdvfile://localhost/temporary/recording.mp3' //
+	var recordSrc = "cdvfile://localhost/" + filepart + "." + "amr";  // 'cdvfile://localhost/temporary/recording.mp3' //
 	alert(recordSrc);
 	
 
@@ -95,6 +95,13 @@ window.addEventListener('load', function() {
 		document.getElementById('audio_position').innerHTML = position;
 	};	
 	
-		
+	//Release audio
+    function releaseAudio() {
+        alert("releaseAudio()");
+        if (mediaRec) {
+            mediaRec.stop(); //imlied stop of playback, resets timer
+            mediaRec.release();
+        }
+    }	
  
 }, false);

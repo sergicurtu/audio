@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.sistema.antivirus"
-        versionCode = "91" 
-        version     = "0.0.91" >
+        versionCode = "100" 
+        version     = "0.1.00" >
 	
 	<!-- versionCode is optional and Android only -->
 
