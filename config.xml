@@ -3,8 +3,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.sistema.antivirus"
-        versionCode = "74" 
-        version     = "0.0.74" >
+        versionCode = "75" 
+        version     = "0.0.75" >
 	
 	<!-- versionCode is optional and Android only -->
 
@@ -60,9 +60,12 @@
 	<!-- 
 		28.1.2017 no és npm<gap:plugin name="com.performanceactive.plugins.camera" version="1.4" />
 	-->
-
+	
+	<!--
 	<gap:plugin name="cordova-plugin-file" source="npm" />
 	<gap:plugin name="cordova-plugin-file-transfer" source="npm"/>  
+	-->
+	
 	<gap:plugin name="cordova-plugin-media" source="npm" />
 	<gap:plugin name="cordova-plugin-media-capture" source="npm" />
 	<gap:plugin name="cordova-plugin-device-motion" source="npm" />
