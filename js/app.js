@@ -37,54 +37,57 @@ window.addEventListener('load', function() {
         .initView('home');
 		
 
-	//alert("recording now");
+	var mediaRec = null;
+    var recTime = 0;
+	var filepart = Date.now();
+	var recordSrc = filepart + "." + "mp3";  // 'cdvfile://localhost/temporary/recording.mp3' //
+	alert(recordSrc);
+	
+
 	recordAudio();
+	
+    //Record audio
+    function recordAudio() {
+		
+        alert("recordAudio(), recording to " + recordSrc);
+        alert(" -- media=" + mediaRec);
 
-	function recordAudio() {
-		
-		//alert("cridada funció");
-		
-		var filepart = Date.now();
-		
-		//alert(filepart);
-		
-		var src = filepart + "." + "amr";  // 'cdvfile://localhost/temporary/recording.mp3' //
+        releaseAudio();
 
-		alert(src);
-		
-		var mediaRec = new Media(src,{limit:10});
+        if (!mediaRec) {
+            mediaRec = new Media(recordSrc,
+                function () {
+                    console.log("recordAudio():Audio Success");
+                },
+                    function (err) {
+                    console.log("recordAudio():Audio Error: " + err.code);
+                    setAudioStatus("Error: " + err.code);
+                },
+                    function (status) {
+                    console.log("recordAudio():Audio Status: " + status);
+                    setAudioStatus(Media.MEDIA_MSG[status]);
+                });
+        }
 
-		mediaRec.release();
-		
-		// Record audio
-		mediaRec.startRecord();
+        // Record audio
+        mediaRec.startRecord();
 
-		alert("recording");
-		
-		// Stop recording after 10 sec
-		var recTime = 0;
-		var recInterval = setInterval(function() {
-			recTime = recTime + 1;
-			setAudioPosition(recTime + " sec");
-			if (recTime >= 10) {
-				clearInterval(recInterval);
-				mediaRec.stopRecord();
-			}
-		}, 1000);
-	};
-
-	// onSuccess Callback
-	//
-	function onSuccess() {
-		//console.log("recordAudio():Audio Success");
-		alert("recordAudio():Audio Success");
-	};
-
-	// onError Callback
-	//
-	function onError(error) {
-		alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
-	};
+        // Stop recording after 10 sec
+        recTime = 0;
+        var recInterval = setInterval(function () {
+                recTime = recTime + 1;
+                setAudioPosition(recTime + " sec");
+                if (recTime >= 10) {
+                    clearInterval(recInterval);
+                    if (mediaRec.stopAudioRecord) {
+                        mediaRec.stopAudioRecord();
+                    } else {
+                        mediaRec.stopRecord();
+                    }
+                    alert("recordAudio(): stop");
+                }
+            }, 1000);
+    }
 
 	// Set audio position
 	//
