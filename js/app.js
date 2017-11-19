@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
     function recordAudio() {
 		
         alert("recordAudio(), recording to " + recordSrc);
-        //alert(" -- media=" + mediaRec);
+        alert(" -- media=" + mediaRec);
 
         //releaseAudio();
 
